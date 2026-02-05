@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services – hlegal</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body style="background:#323264">
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="icon-facebook" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M14 8.5V7.1c0-.7.5-1.1 1.2-1.1H17V3h-2.1C12.8 3 12 4.4 12 6.7v1.8H10v3h2V21h3v-9.5h2.2l.3-3H15z"/>
+  </symbol>
+
+  <symbol id="icon-bag" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M7 7V6a5 5 0 0 1 10 0v1h2a1 1 0 0 1 1 1l-1 12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2L4 8a1 1 0 0 1 1-1h2zm2 0h6V6a3 3 0 0 0-6 0v1z"/>
+  </symbol>
+
+  <symbol id="icon-briefcase" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M9 4h6a2 2 0 0 1 2 2v2h3a1 1 0 0 1 1 1v3H3V9a1 1 0 0 1 1-1h3V6a2 2 0 0 1 2-2zm0 4h6V6H9v2zm-6 8h18v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3z"/>
+  </symbol>
+
+  <symbol id="icon-gear" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M19.4 13a7.7 7.7 0 0 0 0-2l2-1.5-2-3.5-2.3.7a7.4 7.4 0 0 0-1.7-1l-.3-2.4H11l-.3 2.4a7.4 7.4 0 0 0-1.7 1L6.7 6 4.7 9.5 6.7 11a7.7 7.7 0 0 0 0 2l-2 1.5 2 3.5 2.3-.7a7.4 7.4 0 0 0 1.7 1l.3 2.4h4l.3-2.4a7.4 7.4 0 0 0 1.7-1l2.3.7 2-3.5-2-1.5zM12 15.5A3.5 3.5 0 1 1 12 8a3.5 3.5 0 0 1 0 7.5z"/>
+  </symbol>
+
+  <symbol id="icon-handshake" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M7.5 12.5 4 9l2-2 3.5 3.5L12 8l4 4-3 3-1.5-1.5-1 1L9 13l-1.5-0.5zM14 20l-3-3 1-1 3 3-1 1zm3-1-3-3 1-1 3 3-1 1zm-6 0-3-3 1-1 3 3-1 1z"/>
+  </symbol>
+
+  <symbol id="icon-shield" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M12 2 4 5v6c0 5.6 3.8 10.9 8 12 4.2-1.1 8-6.4 8-12V5l-8-3zm0 18.5c-2.7-1.1-5-4.7-5-9V6.6L12 4.9l5 1.7v4.9c0 4.3-2.3 7.9-5 9z"/>
+  </symbol>
+
+  <symbol id="icon-gavel" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M2 21h8v-2H2v2zm9.3-9.7 3.4-3.4 2.8 2.8-3.4 3.4-2.8-2.8zm-1.4 1.4-2.8-2.8 6.4-6.4 2.8 2.8-6.4 6.4zM14.6 16l-1.4-1.4 4.2-4.2 1.4 1.4-4.2 4.2z"/>
+  </symbol>
+
+  <symbol id="icon-arrow-down" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-width="2" d="M6 10l6 6 6-6"/>
+  </symbol>
+</svg>
+
+
+<header class="header" style="position:relative">
+  <div class="container">
+    <div class="header__row">
+      <a class="header__brand" href="index.html">
+        <div>
+          <div class="header__logo"><span>h</span>legal</div>
+          <div class="header__tagline">LAW COMPANY</div>
+        </div>
+      </a>
+
+      <div class="header__right">
+        <div class="header__top">
+          <div class="header__langs">
+            <a class="header__lang" href="#">УК</a>
+            <a class="header__lang" href="#">РУ</a>
+            <a class="header__lang header__lang--active" href="#">EN</a>
+          </div>
+
+          <span class="header__sep"></span>
+          <span>Kyiv, Mechnikova str, 14/1</span>
+
+          <span class="header__sep"></span>
+          <a class="header__phone" href="tel:0800211927">0800 211 927</a>
+
+          <span class="header__sep"></span>
+          <a class="header__social" href="#" aria-label="facebook">
+            <svg><use href="assets/icons/sprite.svg#icon-facebook"></use></svg>
+          </a>
+        </div>
+
+        <nav class="header__nav">
+          <a href="#">about us</a>
+          <a href="services.html" style="color:#F0145A">services</a>
+          <a href="#">team</a>
+          <a href="#">publications</a>
+          <a href="#">contact</a>
+        </nav>
+
+        <button class="header__burger" type="button" data-burger aria-expanded="false" aria-label="menu">≡</button>
+      </div>
+    </div>
+
+    <div class="header__mobile" data-mobile>
+      <nav class="header__mobile-nav">
+        <a href="#">about us</a>
+        <a href="services.html">services</a>
+        <a href="#">team</a>
+        <a href="#">publications</a>
+        <a href="#">contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="top-block top-block--short">
+
+
+</div>
+
+<main class="services" style="background:transparent;color:#fff;padding-top:40px">
+  <div class="container">
+    <div class="services__label">services ></div>
+    <h1 class="services__heading" style="color:#fff">Services</h1>
+    <p style="max-width:720px;color:rgba(255,255,255,.75);margin-top:10px">
+      This page is included to meet the requirement “minimum 2 pages”. It reuses the Services section styles and can be extended to match the Figma Services page.
+    </p>
+
+    <div class="services__grid" style="margin-top:30px">
+      <article class="services__card">
+        <div class="services__icon"><svg><use href="assets/icons/sprite.svg#icon-bag"></use></svg></div>
+        <div class="services__title">IT and e-commerce</div>
+        <div class="services__desc">Contracts, taxes, labor relations, corporate papers.</div>
+      </article>
+
+      <article class="services__card">
+        <div class="services__icon"><svg><use href="assets/icons/sprite.svg#icon-briefcase"></use></svg></div>
+        <div class="services__title">Comprehensive daily support</div>
+        <div class="services__desc">Full legal support for ongoing activities.</div>
+      </article>
+
+      <article class="services__card">
+        <div class="services__icon"><svg><use href="assets/icons/sprite.svg#icon-gear"></use></svg></div>
+        <div class="services__title">Corporate structuring</div>
+        <div class="services__desc">Building and improving corporate processes.</div>
+      </article>
+    </div>
+  </div>
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>

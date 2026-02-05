@@ -1,0 +1,56 @@
+.hero{
+  position: relative;
+  min-height: 100vh;
+  color: $color-text;
+  background: transparent;
+  overflow:hidden;
+
+  &__symbol{
+    position:absolute;
+    left: 50%;
+    top: 46%;
+    transform: translate(-45%, -50%);
+    height: 140%;
+    opacity: .22;
+    pointer-events:none;
+  }
+
+  &__center{
+    position:absolute;
+    inset: 0;
+    display:grid;
+    place-items:center;
+    text-align:center;
+    padding: 0 20px;
+  }
+
+  &__title{
+    font-size: 38px;
+    font-weight: 800;
+    letter-spacing: .2px;
+    max-width: 700px;
+  }
+
+  &__scroll{
+    position:absolute;
+    left:50%;
+    bottom: 28px;
+    transform: translateX(-50%);
+    width: 42px; height: 42px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.35);
+    background: transparent;
+    color: rgba(255,255,255,.85);
+    display:grid; place-items:center;
+    cursor:pointer;
+    transition: .2s;
+    svg{ width: 20px; height: 20px; }
+    &:hover{ border-color: rgba(255,255,255,.8); color:#fff; transform: translateX(-50%) translateY(-2px); }
+  }
+
+  @include mq($bp-768){
+    min-height: 680px;
+    &__title{ font-size: 30px; }
+    &__symbol{ height: 120%; top: 50%; }
+  }
+}

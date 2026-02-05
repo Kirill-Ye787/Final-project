@@ -1,0 +1,47 @@
+.footer{
+  background: $color-light;
+  padding: 20px 0 40px;
+  border-top: 2px solid #E6E6F0;
+
+  &__row{
+    display:flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap:wrap;
+    align-items:center;
+  }
+
+  &__left, &__right{
+    display:flex;
+    align-items:center;
+    gap: 10px;
+    flex-wrap:wrap;
+    color: #666;
+    font-size: 14px;
+  }
+
+  &__map{
+    color: $color-blue;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__copyright{
+    color: #B3B3BA;
+    font-size: 14px;
+  }
+
+  &__social{
+    width: 28px; height: 28px;
+    color: $color-blue;
+    display:grid;
+    place-items:center;
+    svg{ width: 24px; height: 24px; }
+    &:hover{ color: $color-accent; }
+  }
+
+  &__phone{ font-weight: 800; color:#444; }
+  &__email{ color: $color-blue; font-weight: 800; }
+}

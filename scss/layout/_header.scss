@@ -1,0 +1,136 @@
+.header{
+  position:absolute;
+  top:0; left:0; right:0;
+  z-index:10;
+  padding: 20px 0;
+
+  &__row{
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    gap: 24px;
+  }
+
+  &__brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:$color-text;
+  }
+
+  &__logo{
+    font-weight:800;
+    letter-spacing:.5px;
+    font-size: 22px;
+
+    span{ color: $color-accent; }
+  }
+
+  &__tagline{
+    font-size: 10px;
+    letter-spacing: 2px;
+    opacity: .7;
+    margin-top: 2px;
+  }
+
+  &__right{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-end;
+    gap: 10px;
+  }
+
+  &__top{
+    display:flex;
+    align-items:center;
+    gap: 10px;
+    color:$color-muted;
+    font-size: 14px;
+  }
+
+  &__sep{
+    width: 4px; height: 4px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.35);
+    display:inline-block;
+  }
+
+  &__langs{
+    display:flex; gap: 6px;
+  }
+
+  &__lang{
+    width: 24px; height: 24px;
+    border-radius: 8px;
+    display:grid;
+    place-items:center;
+    font-size: 12px;
+    font-weight: 700;
+    color: $color-text;
+    opacity: .8;
+
+    &--active{
+      background: $color-accent;
+      opacity:1;
+    }
+
+    &:hover{ background: rgba(255,255,255,.12); }
+  }
+
+  &__phone{ color:$color-text; opacity: .9; font-weight: 700; }
+  &__social{
+    width: 24px; height: 24px;
+    display:grid; place-items:center;
+    color: $color-text;
+    opacity:.85;
+    &:hover{ opacity:1; color: $color-blue; }
+    svg{ width: 22px; height: 22px;}
+  }
+
+  &__nav{
+    display:flex;
+    gap: 16px;
+    font-size: 16px;
+    color: $color-text;
+    opacity:.9;
+    a{ position:relative; padding-bottom: 4px; }
+    a:hover{ color: $color-blue; }
+  }
+
+  &__burger{
+    display:none;
+    width:40px; height:40px;
+    border:0; border-radius: 12px;
+    background: rgba(255,255,255,.1);
+    color: $color-text;
+  }
+
+  @include mq($bp-768){
+    position:relative;
+    padding: 12px 0 0;
+
+    &__row{ align-items:center; }
+    &__top{ font-size: 12px; flex-wrap:wrap; justify-content:flex-end; }
+    &__nav{ display:none; }
+    &__burger{ display:inline-grid; place-items:center; }
+  }
+
+  &__mobile{
+    display:none;
+    @include mq($bp-768){
+      display:block;
+      margin-top: 10px;
+      background: rgba(255,255,255,.06);
+      border-radius: 16px;
+      padding: 14px;
+    }
+  }
+
+  &__mobile-nav{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    a{ color:$color-text; opacity:.9; }
+    a:hover{ color:$color-blue; }
+  }
+}

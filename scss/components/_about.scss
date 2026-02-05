@@ -1,0 +1,51 @@
+.about{
+  background: transparent;
+  color: $color-text;
+  padding: 80px 0 50px;
+
+  &__wrap{
+    display:grid;
+    grid-template-columns: 1fr 1px 1.2fr;
+    gap: 40px;
+    align-items:center;
+  }
+
+  &__tabs{
+    list-style:none;
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    gap: 14px;
+    font-size: 38px;
+    font-weight: 800;
+    color: rgba(255,255,255,.45);
+
+    li{ cursor:pointer; }
+    li.is-active{ color: $color-accent-2; }
+    li:hover{ color: rgba(255,255,255,.8); }
+  }
+
+  &__divider{
+    width:1px; height: 220px;
+    background: rgba(255,255,255,.25);
+    justify-self:center;
+  }
+
+  &__title{
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 12px;
+  }
+
+  &__text{
+    color: rgba(255,255,255,.75);
+    max-width: 520px;
+  }
+
+  @include mq($bp-992){
+    &__wrap{ grid-template-columns: 1fr; }
+    &__divider{ display:none; }
+    &__tabs{ flex-direction: row; flex-wrap:wrap; font-size: 26px; }
+  }
+}

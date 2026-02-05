@@ -1,0 +1,31 @@
+.top-block{
+  position: relative;
+  background:
+    radial-gradient(1000px 700px at 20% 30%, rgba(240,20,90,.35), transparent 60%),
+    radial-gradient(900px 600px at 80% 60%, rgba(36,163,255,.20), transparent 65%),
+    linear-gradient(180deg, #323264 0%, #46466E 100%);
+  border-radius: 0 0 12px 12px;
+  overflow: hidden;
+  margin-bottom: 50px;
+
+  &::before{
+    content:"";
+    position:absolute;
+    left:20px; right:20px;
+    bottom:-10px;
+    height:10px;
+    background:#CACADB;
+    border-radius:0 0 12px 12px;
+  }
+  &::after{
+    content:"";
+    position:absolute;
+    left:40px; right:40px;
+    bottom:-20px;
+    height:10px;
+    background:#E7E7F2;
+    border-radius:0 0 12px 12px;
+  }
+
+  &--short{ margin-bottom: 30px; }
+}
